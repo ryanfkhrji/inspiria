@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-poppins;
+}
+
+.navbar-fixed {
+  @apply fixed z-50 bg-bgCream shadow-sm;
+}
+
+.hamburger-line {
+  @apply my-2 block h-[2px] w-[30px] bg-primary;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.grid-card {
+  @apply relative h-20 w-auto overflow-hidden rounded-lg transition-all duration-500 hover:scale-95 md:h-28;
+}
+
+.grid-card-img {
+  @apply absolute h-full w-full bg-cover bg-center transition-all duration-500;
+}
+
+.grid-cards {
+  @apply relative h-auto w-full overflow-hidden transition-all duration-500 hover:scale-95;
+}
